@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/oxytocinSanchit/static/css/main.287d67a0.css",
+    "main.js": "/oxytocinSanchit/static/js/main.ef6648e3.js",
+    "index.html": "/oxytocinSanchit/index.html",
+    "main.287d67a0.css.map": "/oxytocinSanchit/static/css/main.287d67a0.css.map",
+    "main.ef6648e3.js.map": "/oxytocinSanchit/static/js/main.ef6648e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.287d67a0.css",
+    "static/js/main.ef6648e3.js"
+  ]
+}
