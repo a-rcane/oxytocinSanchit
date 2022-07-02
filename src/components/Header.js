@@ -12,9 +12,6 @@ const Header = ({setButtonPopup}) => {
 			>
 				New note
 			</button>
-            <button className='headerBtn'>Group Highlights</button>
-            <button className='headerBtn'>Dot Voting</button>
-            Filter by:<button className='headerBtn'>Select</button>
 		</div>
 	);
 };
