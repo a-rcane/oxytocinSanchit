@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Popup from './Popup';
 
 const AddNote = ({ handleAddNote }) => {
 	const [noteText, setNoteText] = useState('');
@@ -18,28 +17,24 @@ const AddNote = ({ handleAddNote }) => {
 		}
 	};
 
-    const [buttonPopup] = useState(false);
-
 	return (
-        <Popup trigger={buttonPopup}>
-            <div className='note new'>
-                <textarea
-                    rows='8'
-                    cols='10'
-                    placeholder='Type to add a note...'
-                    value={noteText}
-                    onChange={handleChange}
-                ></textarea>
-                <div className='note-footer'>
-                    <small>
-                        {characterLimit - noteText.length} Remaining
-                    </small>
-                    <button className='save' onClick={handleSaveClick}>
-                        Save
-                    </button>
-                </div>
+        <div className='note new'>
+            <textarea
+                rows='8'
+                cols='10'
+                placeholder='Type to add a note...'
+                value={noteText}
+                onChange={handleChange}
+            ></textarea>
+            <div className='note-footer'>
+                <small>
+                    {characterLimit - noteText.length} Remaining
+                </small>
+                <button className='save' onClick={handleSaveClick}>
+                    Save
+                </button>
             </div>
-        </Popup>
+        </div>
 	);
 };
 

@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
 
-const Header = () => {
-	
-	const [setButtonPopup] = useState(false);
-	
+const Header = ({setButtonPopup}) => {
+		
 	return (
 		<div className='header'>
 			<h1>Messaging / Affinity Map</h1>
 			<button
 				onClick={() =>
-					setButtonPopup(true)
+					setButtonPopup(setButtonPopup)
 				}
 				className='save'
 			>
@@ -17,7 +14,7 @@ const Header = () => {
 			</button>
             <button className='headerBtn'>Group Highlights</button>
             <button className='headerBtn'>Dot Voting</button>
-            <p>Filter by: </p><button className='headerBtn'>Select</button>
+            Filter by:<button className='headerBtn'>Select</button>
 		</div>
 	);
 };

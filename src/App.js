@@ -6,6 +6,8 @@ import Header from './components/Header';
 const App = () => {
 	const [notes, setNotes] = useState([]);
 
+	const [buttonPopup, setButtonPopup] = useState(false);
+
 	useEffect(() => {
 		const savedNotes = JSON.parse(
 			localStorage.getItem('react-notes-app-data')
@@ -42,7 +44,7 @@ const App = () => {
 	return (
 		<div>
 			<div className='container'>
-				<Header/>
+				<Header setButtonPopup={true}/>
 				<NotesList
 					notes={notes.filter((note) =>
 						note.text.toLowerCase()
